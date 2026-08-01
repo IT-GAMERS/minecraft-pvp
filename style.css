@@ -7,25 +7,29 @@
 
 body{
     font-family:'Poppins',sans-serif;
-    background:#0b1020;
-    color:white;
+    background:#0f172a;
+    color:#fff;
 }
+
+/* Navigation */
 
 nav{
     position:fixed;
-    top:0;
     width:100%;
+    top:0;
+    left:0;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 8%;
-    background:#121a2f;
+    padding:18px 8%;
+    background:rgba(0,0,0,.8);
+    backdrop-filter:blur(10px);
     z-index:1000;
 }
 
 .logo{
-    font-size:28px;
-    font-weight:700;
+    font-size:30px;
+    font-weight:800;
     color:#39ff14;
 }
 
@@ -39,123 +43,247 @@ nav a{
     color:white;
     text-decoration:none;
     transition:.3s;
+    font-weight:500;
 }
 
 nav a:hover{
     color:#39ff14;
 }
 
+/* Hero */
+
 .hero{
-    min-height:100vh;
+
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
+    url("https://images.unsplash.com/photo-1627856013091-fed6e4e30025?auto=format&fit=crop&w=1600&q=80");
+
+    background-size:cover;
+    background-position:center;
+
     display:flex;
-    flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:40px;
-    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-    url("https://images.unsplash.com/photo-1627856013091-fed6e4e30025?auto=format&fit=crop&w=1500&q=80");
-    background-size:cover;
-    background-position:center;
+
+}
+
+.overlay{
+
+    width:90%;
+
 }
 
 .hero h1{
-    font-size:60px;
+
+    font-size:70px;
+
     margin-bottom:20px;
+
 }
 
 .hero p{
+
     font-size:22px;
+
     margin-bottom:35px;
+
 }
 
+/* Button */
+
 .btn{
-    background:#39ff14;
-    color:black;
+
+    display:inline-block;
+
     text-decoration:none;
-    padding:15px 35px;
-    border-radius:10px;
+
+    color:#000;
+
+    background:#39ff14;
+
+    padding:15px 40px;
+
+    border-radius:8px;
+
     font-weight:bold;
+
     transition:.3s;
+
 }
 
 .btn:hover{
+
     transform:scale(1.08);
+
 }
 
+/* Cards */
+
 .card{
+
     width:min(900px,90%);
+
     margin:80px auto;
-    background:#18233d;
+
+    background:#1e293b;
+
     padding:35px;
-    border-radius:18px;
-    box-shadow:0 0 20px rgba(0,0,0,.35);
+
+    border-radius:20px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
 }
 
 .card h2{
+
     margin-bottom:20px;
+
     color:#39ff14;
+
 }
 
 .card p,
 .card li{
+
     margin:12px 0;
+
 }
 
+/* Form */
+
 form{
+
     display:flex;
+
     flex-direction:column;
+
     gap:18px;
+
 }
 
 input,
 select{
+
     padding:14px;
+
     border:none;
+
     border-radius:8px;
+
     font-size:16px;
+
 }
 
 button{
+
     background:#39ff14;
-    color:black;
-    padding:15px;
+
+    color:#000;
+
     border:none;
-    border-radius:8px;
-    cursor:pointer;
+
+    padding:16px;
+
     font-size:18px;
-    font-weight:bold;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
     transition:.3s;
+
+    font-weight:bold;
+
 }
 
 button:hover{
-    transform:scale(1.03);
+
+    transform:scale(1.05);
+
 }
 
-footer{
-    text-align:center;
-    padding:35px;
-    background:#121a2f;
+/* Prize Cards */
+
+.prizes{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
 }
+
+.prize{
+
+    background:#334155;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+}
+
+.prize h3{
+
+    color:#39ff14;
+
+    margin-bottom:10px;
+
+}
+
+/* Footer */
+
+footer{
+
+    margin-top:80px;
+
+    text-align:center;
+
+    padding:30px;
+
+    background:#111827;
+
+}
+
+/* Mobile */
 
 @media(max-width:768px){
 
-nav{
-    flex-direction:column;
-    gap:15px;
-}
-
-nav ul{
-    flex-wrap:wrap;
-    justify-content:center;
-}
-
 .hero h1{
-    font-size:38px;
+
+font-size:42px;
+
 }
 
 .hero p{
-    font-size:18px;
+
+font-size:18px;
+
+}
+
+nav{
+
+flex-direction:column;
+
+padding:15px;
+
+}
+
+nav ul{
+
+margin-top:10px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
 }
 
 }
