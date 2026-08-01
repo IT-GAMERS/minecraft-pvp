@@ -1,135 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT GAMERS | Minecraft PvP Tournament</title>
 
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>IT GAMERS Minecraft PvP Tournament</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
 <nav>
-    <div class="logo">
-        IT GAMERS
-    </div>
 
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#tournament">Tournament</a></li>
-        <li><a href="#register">Register</a></li>
-        <li><a href="#rules">Rules</a></li>
-    </ul>
+<div class="logo">
+
+IT GAMERS
+
+</div>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#rules">Rules</a></li>
+
+<li><a href="#register">Register</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
 </nav>
 
 <section class="hero" id="home">
 
-    <h1>MINECRAFT PvP TOURNAMENT</h1>
+<div class="overlay">
 
-    <p>
-        Fight the best players and become the Champion.
-    </p>
+<h1>MINECRAFT PvP TOURNAMENT</h1>
 
-    <a href="#register" class="btn">
-        Register Now
-    </a>
+<p>
 
-</section>
+Battle against the best players.
 
-<section id="tournament" class="card">
+Only one champion survives.
 
-<h2>Tournament Information</h2>
+</p>
 
-<p><b>Date:</b> Coming Soon</p>
+<a href="#register" class="btn">
 
-<p><b>Time:</b> Coming Soon</p>
+Register Now
 
-<p><b>Platform:</b> Java & Bedrock</p>
+</a>
 
-<p><b>Entry Fee:</b> Free</p>
+</div>
 
 </section>
 
-<section id="register" class="card">
+<section id="about" class="card">
 
-<h2>Registration</h2>
+<h2>About Tournament</h2>
 
-<form id="registrationForm">
+<p>
 
-<input
-type="text"
-id="name"
-placeholder="Your Name"
-required>
+Welcome to the official Minecraft PvP Tournament hosted by IT GAMERS.
 
-<input
-type="text"
-id="gamertag"
-placeholder="Minecraft Gamertag"
-required>
+Players from Java and Bedrock Editions can participate.
 
-<select id="platform">
+Compete, prove your skills, and become the champion!
 
-<option>Java Edition</option>
-
-<option>Bedrock Edition</option>
-
-</select>
-
-<input
-type="number"
-id="age"
-placeholder="Age"
-required>
-
-<input
-type="text"
-id="region"
-placeholder="Region"
-required>
-
-<input
-type="text"
-id="discord"
-placeholder="Discord Username">
-
-<button type="submit">
-Register
-</button>
-
-</form>
+</p>
 
 </section>
 
 <section id="rules" class="card">
 
-<h2>Rules</h2>
+<h2>Tournament Rules</h2>
 
 <ul>
 
-<li>No Cheating</li>
+<li>✔ No Hacks or Cheats</li>
 
-<li>No Hacks</li>
+<li>✔ Respect all players</li>
 
-<li>Respect Everyone</li>
+<li>✔ Listen to moderators</li>
 
-<li>Host Decision is Final</li>
+<li>✔ One account per player</li>
+
+<li>✔ Be online before match time</li>
 
 </ul>
 
 </section>
 
+<section id="register" class="card">
+
+<h2>Player Registration</h2>
+
+<form id="registrationForm"
+action="https://docs.google.com/forms/d/e/1FAIpQLSeTh9-Iuax_J-pROU6N--S3W9IXlgnsuSCTuA_eqjMi8vf2ig/formResponse"
+method="POST"
+target="hidden_iframe">
+
+<label>Name</label>
+
+<input
+type="text"
+name="entry.504957760"
+placeholder="Enter your name"
+required>
+
+<label>Minecraft Gamertag</label>
+
+<input
+type="text"
+name="entry.1046095489"
+placeholder="Enter your Gamertag"
+required>
+
+<label>Platform</label>
+
+<select
+name="entry.1793031699"
+required>
+
+<option value="">Select Platform</option>
+
+<option>Java Edition</option>
+
+<option>Bedrock</option>
+
+</select>
+
+<label>Age</label>
+
+<input
+type="number"
+name="entry.664809438"
+placeholder="Age"
+required>
+
+    <label>Region</label>
+
+<input
+type="text"
+name="entry.1713786179"
+placeholder="Country / State"
+required>
+
+<label>Discord Username (Optional)</label>
+
+<input
+type="text"
+name="entry.1258578263"
+placeholder="username#0000">
+
+<button type="submit">
+
+Register Now
+
+</button>
+
+</form>
+
+<iframe
+name="hidden_iframe"
+style="display:none;">
+</iframe>
+
+</section>
+
+<section class="card">
+
+<h2>Prize Pool</h2>
+
+<div class="prizes">
+
+<div class="prize">
+
+<h3>🥇 Winner</h3>
+
+<p>TBA</p>
+
+</div>
+
+<div class="prize">
+
+<h3>🥈 Runner-Up</h3>
+
+<p>TBA</p>
+
+</div>
+
+<div class="prize">
+
+<h3>🏅 MVP</h3>
+
+<p>TBA</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="card">
+
+<h2>Tournament Information</h2>
+
+<p><strong>Date:</strong> 9 August 2026</p>
+
+<p><strong>Time:</strong> To Be Announced</p>
+
+<p><strong>Mode:</strong> Minecraft PvP</p>
+
+<p><strong>Edition:</strong> Java & Bedrock</p>
+
+<p><strong>Hosted By:</strong> IT GAMERS</p>
+
+</section>
+
+<section class="card" id="contact">
+
+<h2>Contact</h2>
+
+<p>
+
+Discord Server: Coming Soon
+
+</p>
+
+<p>
+
+YouTube: IT GAMERS
+
+</p>
+
+</section>
+
 <footer>
 
-© 2026 IT GAMERS
+<p>
+
+© 2026 IT GAMERS. All Rights Reserved.
+
+</p>
 
 </footer>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
