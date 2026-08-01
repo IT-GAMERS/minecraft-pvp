@@ -3,7 +3,7 @@
 // ================================
 
 // Replace this with your Apps Script Web App URL
-const WEB_APP_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_URL_HERE";
+const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxP4SHfm8eytkwIp2BPohptAOx72nS2hMiNYgH29HnGE1b16gxHlRp3IfMHiLKhan6b/exec";
 
 const form = document.getElementById("registrationForm");
 
